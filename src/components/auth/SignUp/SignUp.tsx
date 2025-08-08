@@ -205,7 +205,7 @@ const SignUp = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center space-x-2 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-green-800 to-orange-500 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-green-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">G</span>
             </div>
             <span className="text-3xl font-bold text-gray-800">Gladdy</span>
@@ -233,7 +233,7 @@ const SignUp = () => {
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium ${
                         currentStep >= step.number
-                          ? "bg-green-800 text-white"
+                          ? "bg-orange-500 text-white"
                           : "bg-gray-200 text-gray-600"
                       }`}
                     >
@@ -256,7 +256,7 @@ const SignUp = () => {
                     <div
                       className={`flex-1 h-0.5 mx-4 ${
                         currentStep > step.number
-                          ? "bg-green-800"
+                          ? "bg-orange-500"
                           : "bg-gray-200"
                       }`}
                     />
@@ -305,7 +305,7 @@ const SignUp = () => {
                   Already have an account?{" "}
                   <Link
                     to="/auth/login"
-                    className="font-medium text-green-800 hover:text-green-900"
+                    className="font-medium text-orange-500 hover:text-orange-600"
                   >
                     Sign in here
                   </Link>
@@ -323,7 +323,7 @@ const SignUp = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <Check className="w-4 h-4 text-green-800 flex-shrink-0" />
+                    <Check className="w-4 h-4 text-orange-500 flex-shrink-0" />
                     <span className="text-sm text-gray-600">{benefit}</span>
                   </div>
                 ))}

@@ -24,7 +24,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-green-800 to-orange-500 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-green-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">G</span>
             </div>
             <span className="text-2xl font-heading font-bold text-gradient">
@@ -36,31 +36,31 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-8">
             <a
               href="#services"
-              className="text-charcoal hover:text-green-800 transition-colors font-medium"
+              className="text-charcoal hover:text-orange-500 transition-colors font-medium"
             >
               Services
             </a>
             <a
               href="#how-it-works"
-              className="text-charcoal hover:text-green-800 transition-colors font-medium"
+              className="text-charcoal hover:text-orange-500 transition-colors font-medium"
             >
               How It Works
             </a>
             <a
               href="#vendors"
-              className="text-charcoal hover:text-green-800 transition-colors font-medium"
+              className="text-charcoal hover:text-orange-500 transition-colors font-medium"
             >
               Vendors
             </a>
             <a
               href="#coverage"
-              className="text-charcoal hover:text-green-800 transition-colors font-medium"
+              className="text-charcoal hover:text-orange-500 transition-colors font-medium"
             >
               Coverage
             </a>
             <a
               href="#about"
-              className="text-charcoal hover:text-green-800 transition-colors font-medium"
+              className="text-charcoal hover:text-orange-500 transition-colors font-medium"
             >
               About
             </a>
@@ -71,13 +71,13 @@ const Header = () => {
             <button className="p-2 text-charcoal hover:text-green-800 transition-colors">
               <Search className="w-5 h-5" />
             </button>
-            <button className="p-2 text-charcoal hover:text-green-800 transition-colors relative">
+            <button className="p-2 text-charcoal hover:text-orange-500 transition-colors relative">
               <ShoppingCart className="w-5 h-5" />
               <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                 3
               </span>
             </button>
-            <button className="p-2 text-charcoal hover:text-green-800 transition-colors">
+            <button className="p-2 text-charcoal hover:text-orange-500 transition-colors">
               <User className="w-5 h-5" />
             </button>
             <Link to="/auth/login" className="btn-outline text-sm">Sign In</Link>
@@ -103,31 +103,31 @@ const Header = () => {
             <nav className="py-4 space-y-4">
               <a
                 href="#services"
-                className="block px-4 py-2 text-charcoal hover:text-green-800 transition-colors"
+                className="block px-4 py-2 text-charcoal hover:text-orange-500 transition-colors"
               >
                 Services
               </a>
               <a
                 href="#how-it-works"
-                className="block px-4 py-2 text-charcoal hover:text-green-800 transition-colors"
+                className="block px-4 py-2 text-charcoal hover:text-orange-500 transition-colors"
               >
                 How It Works
               </a>
               <a
                 href="#vendors"
-                className="block px-4 py-2 text-charcoal hover:text-green-800 transition-colors"
+                className="block px-4 py-2 text-charcoal hover:text-orange-500 transition-colors"
               >
                 Vendors
               </a>
               <a
                 href="#coverage"
-                className="block px-4 py-2 text-charcoal hover:text-green-800 transition-colors"
+                className="block px-4 py-2 text-charcoal hover:text-orange-500 transition-colors"
               >
                 Coverage
               </a>
               <a
                 href="#about"
-                className="block px-4 py-2 text-charcoal hover:text-green-800 transition-colors"
+                className="block px-4 py-2 text-charcoal hover:text-orange-500 transition-colors"
               >
                 About
               </a>

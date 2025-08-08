@@ -110,15 +110,15 @@ function Password({ formData, setFormData, handleRegister, isLoading }: Password
               required
               checked={formData.agreeToTerms}
               onChange={handleChange}
-              className="h-4 w-4 text-green-800 focus:ring-green-800 border-gray-300 rounded mt-1"
+              className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded mt-1"
             />
             <label htmlFor="agreeToTerms" className="ml-3 block text-sm text-medium-gray">
               I agree to the{' '}
-              <Link to="/terms" className="text-green-800 hover:text-green-900 font-medium">
+              <Link to="/terms" className="text-orange-500 hover:text-orange-600 font-medium">
                 Terms of Service
               </Link>{' '}
               and{' '}
-              <Link to="/privacy" className="text-green-800 hover:text-green-900 font-medium">
+              <Link to="/privacy" className="text-orange-500 hover:text-orange-600 font-medium">
                 Privacy Policy
               </Link>
             </label>
@@ -131,7 +131,7 @@ function Password({ formData, setFormData, handleRegister, isLoading }: Password
               type="checkbox"
               checked={formData.subscribeNewsletter}
               onChange={handleChange}
-              className="h-4 w-4 text-green-800 focus:ring-green-800 border-gray-300 rounded mt-1"
+              className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded mt-1"
             />
             <label htmlFor="subscribeNewsletter" className="ml-3 block text-sm text-medium-gray">
               Subscribe to our newsletter for updates and exclusive offers
@@ -142,7 +142,7 @@ function Password({ formData, setFormData, handleRegister, isLoading }: Password
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-green-800 text-white py-3 px-4 rounded-lg hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center"
+          className="w-full bg-orange-500 text-white py-3 px-4 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center"
         >
           {isLoading ? (
             <>

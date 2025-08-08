@@ -7,17 +7,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        green: {
-          50: '#F1F8E9',
-          700: '#388E3C',
-          800: '#1B5E20',
-          900: '#0D4F1C',
-        },
         orange: {
-          50: '#FFF3E0',
-          500: '#FF6B35',
-          600: '#FF5722',
-          700: '#E64A19',
+          50: '#FFF7ED',
+          100: '#FFEDD5',
+          200: '#FED7AA',
+          300: '#FDBA74',
+          400: '#FB923C',
+          500: '#FF8C42',
+          600: '#EA580C',
+          700: '#C2410C',
+          800: '#9A3412',
+          900: '#7C2D12',
+        },
+        green: {
+          50: '#ECFDF5',
+          100: '#D1FAE5',
+          200: '#A7F3D0',
+          300: '#6EE7B7',
+          400: '#34D399',
+          500: '#10B981',
+          600: '#059669',
+          700: '#047857',
+          800: '#065F46',
+          900: '#064E3B',
         },
         primary: {
           gold: '#FFB300',
@@ -26,7 +38,7 @@ export default {
         warning: '#FFC107',
         error: '#DC3545',
         info: '#17A2B8',
-        charcoal: '#2C2C2C',
+        charcoal: '#2D3748',
         'medium-gray': '#6C757D',
         'light-gray': '#F8F9FA',
       },

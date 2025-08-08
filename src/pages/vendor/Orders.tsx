@@ -212,14 +212,14 @@ const VendorOrders = () => {
                     placeholder="Search orders..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 w-64"
+                    className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 w-64"
                   />
                 </div>
                 
                 <select 
                   value={statusFilter}
                   onChange={(e) => setStatusFilter(e.target.value)}
-                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-800"
+                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 >
                   <option value="all">All Status</option>
                   <option value="pending">Pending</option>
@@ -232,7 +232,7 @@ const VendorOrders = () => {
                 <select 
                   value={dateFilter}
                   onChange={(e) => setDateFilter(e.target.value)}
-                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-800"
+                  className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 >
                   <option value="all">All Time</option>
                   <option value="today">Today</option>
@@ -304,7 +304,7 @@ const VendorOrders = () => {
                       <div className="border-t pt-2 mt-2">
                         <div className="flex justify-between font-semibold">
                           <span>Total</span>
-                          <span className="text-green-800">{order.total}</span>
+                          <span className="text-orange-600">{order.total}</span>
                         </div>
                       </div>
                     </div>

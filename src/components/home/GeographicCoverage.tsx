@@ -94,7 +94,7 @@ const GeographicCoverage = () => {
                         d="M50 50 L250 50 L280 100 L250 150 L50 150 L20 100 Z" 
                         fill="currentColor" 
                         opacity="0.1"
-                        stroke="currentColor"
+                        stroke="#FF8C42"
                         strokeWidth="2"
                       />
                     </svg>
@@ -167,7 +167,7 @@ const GeographicCoverage = () => {
         </div>
 
         {/* Expansion Roadmap */}
-        <div className="bg-gradient-to-r from-green-800 to-orange-500 rounded-3xl p-8 md:p-12 text-white mb-16">
+        <div className="bg-gradient-to-r from-orange-500 to-green-600 rounded-3xl p-8 md:p-12 text-white mb-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Our Expansion Roadmap
@@ -213,7 +213,7 @@ const GeographicCoverage = () => {
           <div className="bg-light-gray rounded-3xl p-8 md:p-12">
             <div className="max-w-3xl mx-auto">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-r from-green-800 to-orange-500 rounded-2xl flex items-center justify-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-green-600 rounded-2xl flex items-center justify-center">
                   <Truck className="w-10 h-10 text-white" />
                 </div>
               </div>
@@ -229,15 +229,15 @@ const GeographicCoverage = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-800 mb-2">Same Day</div>
+                  <div className="text-2xl font-bold text-orange-600 mb-2">Same Day</div>
                   <div className="text-medium-gray">Urban Areas</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-800 mb-2">Next Day</div>
+                  <div className="text-2xl font-bold text-orange-600 mb-2">Next Day</div>
                   <div className="text-medium-gray">Provincial Cities</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-800 mb-2">2-3 Days</div>
+                  <div className="text-2xl font-bold text-orange-600 mb-2">2-3 Days</div>
                   <div className="text-medium-gray">Rural Areas</div>
                 </div>
               </div>

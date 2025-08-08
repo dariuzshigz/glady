@@ -155,7 +155,7 @@ const TrustSafety = () => {
         </div>
 
         {/* Security Badges */}
-        <div className="bg-gradient-to-r from-green-800 to-orange-500 rounded-2xl p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-orange-500 to-green-600 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-heading font-bold mb-6">
             Trusted & Certified
           </h3>

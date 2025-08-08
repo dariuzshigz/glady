@@ -84,7 +84,7 @@ const TechInnovation = () => {
         </div>
 
         {/* Tech Stack Showcase */}
-        <div className="bg-gradient-to-r from-green-800 to-orange-500 rounded-3xl p-8 md:p-12 text-white">
+        <div className="bg-gradient-to-r from-orange-500 to-green-600 rounded-3xl p-8 md:p-12 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-4xl font-heading font-bold mb-6">
@@ -131,7 +131,7 @@ const TechInnovation = () => {
                   </div>
                 </div>
                 <div className="flex space-x-2">
-                  <div className="flex-1 h-10 bg-green-800 rounded-lg"></div>
+                  <div className="flex-1 h-10 bg-orange-500 rounded-lg"></div>
                   <div className="w-10 h-10 bg-orange-500 rounded-lg"></div>
                 </div>
               </div>

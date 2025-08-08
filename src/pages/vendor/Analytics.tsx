@@ -121,7 +121,7 @@ const VendorAnalytics = () => {
               <select 
                 value={timeRange}
                 onChange={(e) => setTimeRange(e.target.value)}
-                className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-800"
+                className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
               >
                 <option value="7days">Last 7 days</option>
                 <option value="30days">Last 30 days</option>
@@ -235,7 +235,7 @@ const VendorAnalytics = () => {
                       onClick={() => setChartType('revenue')}
                       className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                         chartType === 'revenue' 
-                          ? 'bg-green-100 text-green-800' 
+                          ? 'bg-orange-100 text-orange-600' 
                           : 'text-medium-gray hover:text-charcoal'
                       }`}
                     >
@@ -245,7 +245,7 @@ const VendorAnalytics = () => {
                       onClick={() => setChartType('orders')}
                       className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                         chartType === 'orders' 
-                          ? 'bg-green-100 text-green-800' 
+                          ? 'bg-orange-100 text-orange-600' 
                           : 'text-medium-gray hover:text-charcoal'
                       }`}
                     >
@@ -259,7 +259,7 @@ const VendorAnalytics = () => {
                 {/* Placeholder for chart */}
                 <div className="h-64 bg-gradient-to-r from-green-50 to-orange-50 rounded-lg flex items-center justify-center">
                   <div className="text-center">
-                    <BarChart3 className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                    <BarChart3 className="w-12 h-12 text-orange-500 mx-auto mb-4" />
                     <p className="text-medium-gray">
                       {chartType === 'revenue' ? 'Revenue' : 'Orders'} chart visualization
                     </p>
@@ -354,7 +354,7 @@ const VendorAnalytics = () => {
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">
                         <div 
-                          className="bg-gradient-to-r from-green-800 to-orange-500 h-2 rounded-full"
+                          className="bg-gradient-to-r from-orange-500 to-green-600 h-2 rounded-full"
                           style={{ width: `${location.percentage}%` }}
                         ></div>
                       </div>

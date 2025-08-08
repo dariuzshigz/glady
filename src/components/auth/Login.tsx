@@ -118,7 +118,7 @@ const LoginPage = () => {
         {/* Header */}
         <div className="text-center">
           <Link to="/" className="inline-flex items-center space-x-2 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-green-800 to-orange-500 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-green-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">G</span>
             </div>
             <span className="text-3xl font-heading font-bold text-gradient">
@@ -225,7 +225,7 @@ const LoginPage = () => {
                   type="checkbox"
                   checked={formData.rememberMe}
                   onChange={handleChange}
-                  className="h-4 w-4 text-green-800 focus:ring-green-800 border-gray-300 rounded"
+                  className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded"
                 />
                 <label
                   htmlFor="rememberMe"
@@ -237,7 +237,7 @@ const LoginPage = () => {
               <Link
                 to="/signup"
                 state={[{ sendemailreset: true }]}
-                className="text-sm text-green-800 hover:text-green-900 font-medium"
+                className="text-sm text-orange-500 hover:text-orange-600 font-medium"
               >
                 Forgot password?
               </Link>
@@ -295,7 +295,7 @@ const LoginPage = () => {
               Don't have an account?{" "}
               <Link
                 to="/auth/register"
-                className="font-medium text-green-800 hover:text-green-900"
+                className="font-medium text-orange-500 hover:text-orange-600"
               >
                 Sign up for free
               </Link>
@@ -307,11 +307,11 @@ const LoginPage = () => {
         <div className="text-center">
           <p className="text-xs text-medium-gray">
             By signing in, you agree to our{" "}
-            <Link to="/terms" className="text-green-800 hover:text-green-900">
+            <Link to="/terms" className="text-orange-500 hover:text-orange-600">
               Terms of Service
             </Link>{" "}
             and{" "}
-            <Link to="/privacy" className="text-green-800 hover:text-green-900">
+            <Link to="/privacy" className="text-orange-500 hover:text-orange-600">
               Privacy Policy
             </Link>
           </p>

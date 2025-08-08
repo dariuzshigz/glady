@@ -38,7 +38,7 @@ const CallToAction = () => {
     <section className="section-padding bg-light-gray">
       <div className="container-max">
         {/* Business CTA */}
-        <div className="bg-gradient-to-r from-green-800 to-green-700 rounded-3xl p-8 md:p-12 text-white mb-16">
+        <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl p-8 md:p-12 text-white mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
@@ -67,11 +67,11 @@ const CallToAction = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-white text-green-800 font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2">
+                <button className="bg-white text-orange-600 font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2">
                   <span>Apply as Vendor</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <button className="border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-green-800 transition-colors">
+                <button className="border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-orange-600 transition-colors">
                   Learn More
                 </button>
               </div>
@@ -92,7 +92,7 @@ const CallToAction = () => {
                   </div>
                 </div>
                 <div className="bg-green-50 rounded-lg p-4 mb-4">
-                  <div className="text-2xl font-bold text-green-800 mb-1">+300%</div>
+                  <div className="text-2xl font-bold text-orange-600 mb-1">+300%</div>
                   <div className="text-sm text-medium-gray">Sales Increase</div>
                 </div>
                 <p className="text-sm text-medium-gray italic">
@@ -112,12 +112,12 @@ const CallToAction = () => {
         </div>
 
         {/* Customer CTA */}
-        <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl p-8 md:p-12 text-white">
+        <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-3xl p-8 md:p-12 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               {/* App Preview */}
               <div className="bg-white rounded-3xl p-6 shadow-2xl max-w-sm mx-auto">
-                <div className="bg-gradient-to-r from-green-800 to-orange-500 rounded-2xl p-4 text-white text-center mb-4">
+                <div className="bg-gradient-to-r from-orange-500 to-green-600 rounded-2xl p-4 text-white text-center mb-4">
                   <h4 className="font-bold text-lg">Welcome to Gladdy!</h4>
                   <p className="text-sm opacity-90">Start shopping local</p>
                 </div>
@@ -137,7 +137,7 @@ const CallToAction = () => {
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -top-4 -left-4 bg-white text-orange-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              <div className="absolute -top-4 -left-4 bg-white text-green-700 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                 10,000+ Happy Customers
               </div>
             </div>
@@ -161,11 +161,11 @@ const CallToAction = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-white text-orange-600 font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2">
+                <button className="bg-white text-green-700 font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2">
                   <span>Shop Now</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <button className="border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-orange-600 transition-colors">
+                <button className="border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-green-700 transition-colors">
                   Download App
                 </button>
               </div>

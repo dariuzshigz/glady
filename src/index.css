@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --primary-green: #1B5E20;
-  --secondary-orange: #FF6B35;
+  --primary-orange: #FF8C42;
+  --secondary-green: #059669;
   --accent-gold: #FFB300;
   --success-green: #28A745;
   --warning-amber: #FFC107;
   --error-red: #DC3545;
   --info-blue: #17A2B8;
-  --dark-charcoal: #2C2C2C;
+  --dark-charcoal: #2D3748;
   --medium-gray: #6C757D;
   --light-gray: #F8F9FA;
 }
@@ -37,11 +37,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-primary {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-orange) 100%);
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-green) 100%);
 }
 
 .gradient-hero {
-  background: linear-gradient(135deg, rgba(27, 94, 32, 0.15) 0%, rgba(255, 107, 53, 0.15) 100%);
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.15) 0%, rgba(5, 150, 105, 0.15) 100%);
 }
 
 .glassmorphism {
@@ -51,15 +51,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-  @apply bg-gradient-to-r from-green-800 to-green-700 hover:from-green-900 hover:to-green-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
-}
-
-.btn-secondary {
   @apply bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
 }
 
+.btn-secondary {
+  @apply bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+}
+
 .btn-outline {
-  @apply border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300;
+  @apply border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300;
 }
 
 .card-hover {
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-orange) 100%);
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-green) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -149,10 +149,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-green);
+  background: var(--primary-orange);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-orange);
+  background: var(--secondary-green);
 }

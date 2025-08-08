@@ -65,7 +65,7 @@ const HowItWorks = () => {
               onClick={() => setActiveTab('customers')}
               className={`px-8 py-3 rounded-md font-semibold transition-all duration-300 ${
                 activeTab === 'customers'
-                  ? 'bg-white text-green-800 shadow-md'
+                  ? 'bg-white text-orange-600 shadow-md'
                   : 'text-medium-gray hover:text-charcoal'
               }`}
             >
@@ -75,7 +75,7 @@ const HowItWorks = () => {
               onClick={() => setActiveTab('vendors')}
               className={`px-8 py-3 rounded-md font-semibold transition-all duration-300 ${
                 activeTab === 'vendors'
-                  ? 'bg-white text-green-800 shadow-md'
+                  ? 'bg-white text-orange-600 shadow-md'
                   : 'text-medium-gray hover:text-charcoal'
               }`}
             >
@@ -97,13 +97,13 @@ const HowItWorks = () => {
 
                 <div className="relative z-10 text-center">
                   {/* Step Number */}
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-green-800 to-orange-500 text-white font-bold text-lg rounded-full mb-6">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-orange-500 to-green-600 text-white font-bold text-lg rounded-full mb-6">
                     {index + 1}
                   </div>
 
                   {/* Icon */}
-                  <div className="w-20 h-20 bg-light-gray rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-green-50 transition-colors">
-                    <IconComponent className="w-10 h-10 text-green-800" />
+                  <div className="w-20 h-20 bg-light-gray rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-50 transition-colors">
+                    <IconComponent className="w-10 h-10 text-orange-600" />
                   </div>
 
                   {/* Content */}
@@ -126,7 +126,7 @@ const HowItWorks = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-green-800 to-orange-500 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-orange-500 to-green-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-heading font-bold mb-4">
               {activeTab === 'customers' ? 'Ready to Start Shopping?' : 'Ready to Grow Your Business?'}
             </h3>
@@ -136,7 +136,7 @@ const HowItWorks = () => {
                 : 'Join 500+ successful businesses on our platform'
               }
             </p>
-            <button className="bg-white text-green-800 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-orange-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
               {activeTab === 'customers' ? 'Start Shopping Now' : 'Apply as Vendor'}
             </button>
           </div>

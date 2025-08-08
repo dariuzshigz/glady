@@ -81,7 +81,7 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto animate-fade-in px-2">
             <div className="flex items-center justify-center space-x-2 text-white/80">
-              <Users className="w-4 h-4 sm:w-5 sm:h-5 text-green-800 flex-shrink-0" />
+              <Users className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0" />
               <span className="font-semibold text-white">500+</span>
               <span className="text-sm sm:text-base">Local Businesses</span>
             </div>
@@ -91,7 +91,7 @@ const Hero = () => {
               <span className="text-sm sm:text-base">Happy Customers</span>
             </div>
             <div className="flex items-center justify-center space-x-2 text-white/80">
-              <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0" />
+              <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0" />
               <span className="font-semibold text-white">Same-Day</span>
               <span className="text-sm sm:text-base">Delivery</span>
             </div>
@@ -99,7 +99,7 @@ const Hero = () => {
 
           {/* Location Badge */}
           <div className="mt-6 sm:mt-8 inline-flex items-center space-x-2 bg-white/90 backdrop-blur-sm rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg mx-2">
-            <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-green-800 flex-shrink-0" />
+            <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-orange-500 flex-shrink-0" />
             <span className="text-charcoal font-medium text-sm sm:text-base">Proudly Serving Sierra Leone</span>
           </div>
 
@@ -123,8 +123,8 @@ const Hero = () => {
 
       {/* Floating Elements */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-gentle hidden sm:block">
-        <div className="w-6 h-10 border-2 border-green-800 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-green-800 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-orange-500 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-orange-500 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

@@ -53,7 +53,7 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-green-800 to-orange-500 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-green-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-xl">G</span>
                 </div>
                 <span className="text-3xl font-heading font-bold text-gradient">Gladdy</span>
@@ -67,15 +67,15 @@ const Footer = () => {
               {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-green-400" />
+                  <MapPin className="w-5 h-5 text-orange-400" />
                   <span className="text-gray-300">Freetown, Sierra Leone</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-green-400" />
+                  <Phone className="w-5 h-5 text-orange-400" />
                   <span className="text-gray-300">+232 XX XXX XXXX</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-green-400" />
+                  <Mail className="w-5 h-5 text-orange-400" />
                   <span className="text-gray-300">hello@gladdy.sl</span>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Footer = () => {
                     <li key={link}>
                       <a 
                         href="#" 
-                        className="text-gray-300 hover:text-green-400 transition-colors text-sm"
+                        className="text-gray-300 hover:text-orange-400 transition-colors text-sm"
                       >
                         {link}
                       </a>
@@ -145,7 +145,7 @@ const Footer = () => {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-800 transition-colors"
+                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors"
                     aria-label={social.label}
                   >
                     <IconComponent className="w-5 h-5 text-gray-300 hover:text-white" />

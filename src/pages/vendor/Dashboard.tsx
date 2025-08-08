@@ -121,7 +121,7 @@ const VendorDashboard = () => {
           <select 
             value={timeFilter}
             onChange={(e) => setTimeFilter(e.target.value)}
-            className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
           >
             <option value="7days">Last 7 days</option>
             <option value="30days">Last 30 days</option>
@@ -260,7 +260,7 @@ const VendorDashboard = () => {
               </div>
               
               <div className="mt-6 text-center">
-                <button className="text-green-600 hover:text-green-700 font-medium text-sm">
+                <button className="text-orange-500 hover:text-orange-600 font-medium text-sm">
                   View All Orders
                 </button>
               </div>
@@ -296,7 +296,7 @@ const VendorDashboard = () => {
               </div>
               
               <div className="mt-6">
-                <button className="w-full text-green-600 hover:text-green-700 font-medium text-sm">
+                <button className="w-full text-orange-500 hover:text-orange-600 font-medium text-sm">
                   View All Products
                 </button>
               </div>
@@ -312,7 +312,7 @@ const VendorDashboard = () => {
             <div className="p-6">
               <div className="space-y-3">
                 <button className="w-full flex items-center space-x-3 p-3 text-left hover:bg-gray-50 rounded-lg transition-colors">
-                  <Plus className="w-5 h-5 text-green-600" />
+                  <Plus className="w-5 h-5 text-orange-500" />
                   <span className="font-medium text-gray-900">Add New Product</span>
                 </button>
                 <button className="w-full flex items-center space-x-3 p-3 text-left hover:bg-gray-50 rounded-lg transition-colors">

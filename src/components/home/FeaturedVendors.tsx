@@ -108,7 +108,7 @@ const FeaturedVendors = () => {
                     className="w-full h-48 object-cover"
                   />
                   {vendor.featured && (
-                    <div className="absolute top-3 left-3 bg-gradient-to-r from-green-800 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Featured
                     </div>
                   )}
@@ -195,12 +195,12 @@ const FeaturedVendors = () => {
 
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <span className="text-xl font-bold text-green-800">{product.price}</span>
+                      <span className="text-xl font-bold text-orange-600">{product.price}</span>
                       {product.originalPrice && (
                         <span className="text-sm text-medium-gray line-through">{product.originalPrice}</span>
                       )}
                     </div>
-                    <button className="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors text-sm font-semibold">
+                    <button className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-semibold">
                       Add to Cart
                     </button>
                   </div>
