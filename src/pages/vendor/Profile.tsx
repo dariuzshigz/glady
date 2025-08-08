@@ -183,7 +183,7 @@ const VendorProfile = () => {
                 onClick={() => setActiveTab('profile')}
                 className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
                   activeTab === 'profile'
-                    ? 'border-green-800 text-green-800'
+                    ? 'border-orange-500 text-orange-500'
                     : 'border-transparent text-medium-gray hover:text-charcoal'
                 }`}
               >
@@ -193,7 +193,7 @@ const VendorProfile = () => {
                 onClick={() => setActiveTab('business')}
                 className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
                   activeTab === 'business'
-                    ? 'border-green-800 text-green-800'
+                    ? 'border-orange-500 text-orange-500'
                     : 'border-transparent text-medium-gray hover:text-charcoal'
                 }`}
               >
@@ -203,7 +203,7 @@ const VendorProfile = () => {
                 onClick={() => setActiveTab('reviews')}
                 className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
                   activeTab === 'reviews'
-                    ? 'border-green-800 text-green-800'
+                    ? 'border-orange-500 text-orange-500'
                     : 'border-transparent text-medium-gray hover:text-charcoal'
                 }`}
               >
@@ -226,7 +226,7 @@ const VendorProfile = () => {
                         type="text"
                         value={profileData.businessName}
                         onChange={(e) => setProfileData({...profileData, businessName: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       />
                     ) : (
                       <p className="text-charcoal">{profileData.businessName}</p>
@@ -242,7 +242,7 @@ const VendorProfile = () => {
                         type="text"
                         value={profileData.ownerName}
                         onChange={(e) => setProfileData({...profileData, ownerName: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       />
                     ) : (
                       <p className="text-charcoal">{profileData.ownerName}</p>
@@ -258,7 +258,7 @@ const VendorProfile = () => {
                         type="email"
                         value={profileData.email}
                         onChange={(e) => setProfileData({...profileData, email: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       />
                     ) : (
                       <p className="text-charcoal">{profileData.email}</p>
@@ -274,7 +274,7 @@ const VendorProfile = () => {
                         type="tel"
                         value={profileData.phone}
                         onChange={(e) => setProfileData({...profileData, phone: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       />
                     ) : (
                       <p className="text-charcoal">{profileData.phone}</p>
@@ -291,7 +291,7 @@ const VendorProfile = () => {
                       value={profileData.address}
                       onChange={(e) => setProfileData({...profileData, address: e.target.value})}
                       rows={3}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
                   ) : (
                     <p className="text-charcoal">{profileData.address}</p>
@@ -307,7 +307,7 @@ const VendorProfile = () => {
                       value={profileData.description}
                       onChange={(e) => setProfileData({...profileData, description: e.target.value})}
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
                   ) : (
                     <p className="text-charcoal">{profileData.description}</p>
@@ -328,7 +328,7 @@ const VendorProfile = () => {
                       <select
                         value={profileData.category}
                         onChange={(e) => setProfileData({...profileData, category: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       >
                         <option value="Food & Beverages">Food & Beverages</option>
                         <option value="Fashion & Textiles">Fashion & Textiles</option>
@@ -350,7 +350,7 @@ const VendorProfile = () => {
                         type="text"
                         value={profileData.established}
                         onChange={(e) => setProfileData({...profileData, established: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       />
                     ) : (
                       <p className="text-charcoal">{profileData.established}</p>
@@ -366,7 +366,7 @@ const VendorProfile = () => {
                         type="url"
                         value={profileData.website}
                         onChange={(e) => setProfileData({...profileData, website: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       />
                     ) : (
                       <p className="text-charcoal">{profileData.website}</p>
@@ -394,7 +394,7 @@ const VendorProfile = () => {
                                 [day]: e.target.value
                               }
                             })}
-                            className="px-3 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-green-800"
+                            className="px-3 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-orange-500"
                           />
                         ) : (
                           <span className="text-medium-gray">{hours}</span>
