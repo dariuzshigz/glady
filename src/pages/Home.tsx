@@ -4,7 +4,6 @@ import {
  ServiceCategories, 
  HowItWorks, 
  FeaturedVendors, 
- TechInnovation, 
  TrustSafety, 
  GeographicCoverage, 
  CallToAction 
@@ -16,8 +15,6 @@ function Home() {
       <Hero />
       <ServiceCategories />
       <HowItWorks />
-      <FeaturedVendors />
-      <TechInnovation />
       <TrustSafety />
       <GeographicCoverage />
       <CallToAction />

@@ -166,48 +166,6 @@ const GeographicCoverage = () => {
           </div>
         </div>
 
-        {/* Expansion Roadmap */}
-        <div className="bg-gradient-to-r from-orange-500 to-green-600 rounded-3xl p-8 md:p-12 text-white mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Our Expansion Roadmap
-            </h3>
-            <p className="text-lg opacity-90">
-              Building the future of commerce across West Africa
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {expansionPlans.map((plan, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                    <span className="font-bold">{index + 1}</span>
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-semibold text-lg">{plan.phase}</h4>
-                    <p className="text-sm opacity-80">{plan.timeline}</p>
-                  </div>
-                </div>
-                
-                <div className="mb-4">
-                  <div className="flex flex-wrap gap-2">
-                    {plan.regions.map((region, regionIndex) => (
-                      <span key={regionIndex} className="bg-white/20 px-3 py-1 rounded-full text-sm">
-                        {region}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                
-                <p className="text-sm opacity-90 leading-relaxed">
-                  {plan.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Delivery Promise */}
         <div className="text-center">
           <div className="bg-light-gray rounded-3xl p-8 md:p-12">
