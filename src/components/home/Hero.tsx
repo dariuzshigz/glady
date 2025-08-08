@@ -7,9 +7,8 @@ const Hero = () => {
   const backgroundImages = [
     'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
     'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
-    'https://images.pexels.com/photos/1153213/pexels-photo-1153213.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
     'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
-    'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080'
+    // 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080'
   ];
 
   useEffect(() => {
@@ -43,12 +42,12 @@ const Hero = () => {
       </div>
       
       {/* Gradient overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/40"></div>
-      <div className="absolute inset-0 gradient-hero"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-white/5 to-transparent"></div>
       
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-green-800 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-500 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-primary-gold rounded-full blur-3xl"></div>
       </div>
@@ -58,28 +57,28 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-4 sm:mb-6 animate-fade-in leading-tight drop-shadow-lg">
             Connecting Every Business,{' '}
-            <span className="text-primary-gold">Delivering Every Dream</span>
+            <span className="bg-gradient-to-r from-primary-gold to-white bg-clip-text text-transparent">Delivering Every Dream</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto animate-slide-up px-2 drop-shadow-md">
+          <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-6 sm:mb-8 max-w-3xl mx-auto animate-slide-up px-2 drop-shadow-md font-medium">
             Sierra Leone's Premier Multi-Service Platform - Marketing, Logistics, E-commerce & More
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 animate-slide-up px-4 sm:px-0">
-            <button className="btn-primary flex items-center justify-center space-x-2 text-base sm:text-lg py-3 sm:py-4 px-6 sm:px-8">
+            <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2 text-base sm:text-lg">
               <span>Start Selling Today</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
-            <button className="btn-secondary flex items-center justify-center space-x-2 text-base sm:text-lg py-3 sm:py-4 px-6 sm:px-8">
+            <button className="bg-white/95 backdrop-blur-sm border-2 border-white/50 text-orange-600 hover:bg-white hover:border-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2 text-base sm:text-lg">
               <span>Shop Now</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto animate-fade-in px-2">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto animate-fade-in px-2 mb-8">
             <div className="flex items-center justify-center space-x-2 text-white/80">
               <Users className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0" />
               <span className="font-semibold text-white">500+</span>
@@ -91,16 +90,16 @@ const Hero = () => {
               <span className="text-sm sm:text-base">Happy Customers</span>
             </div>
             <div className="flex items-center justify-center space-x-2 text-white/80">
-              <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0" />
+              <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-white flex-shrink-0" />
               <span className="font-semibold text-white">Same-Day</span>
               <span className="text-sm sm:text-base">Delivery</span>
             </div>
           </div>
 
           {/* Location Badge */}
-          <div className="mt-6 sm:mt-8 inline-flex items-center space-x-2 bg-white/90 backdrop-blur-sm rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg mx-2">
+          <div className="inline-flex items-center space-x-2 bg-white/95 backdrop-blur-sm rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-2xl mx-2 border border-white/20">
             <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-orange-500 flex-shrink-0" />
-            <span className="text-charcoal font-medium text-sm sm:text-base">Proudly Serving Sierra Leone</span>
+            <span className="text-rich-charcoal font-semibold text-sm sm:text-base">Proudly Serving Sierra Leone</span>
           </div>
 
           {/* Carousel Indicators */}

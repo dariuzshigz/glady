@@ -57,10 +57,10 @@ const ServiceCategories = () => {
     <section id="services" className="section-padding bg-light-gray">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-charcoal mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-rich-charcoal mb-6">
             Everything You Need in <span className="text-gradient">One Platform</span>
           </h2>
-          <p className="text-xl text-medium-gray max-w-3xl mx-auto">
+          <p className="text-xl text-medium-gray max-w-3xl mx-auto font-medium">
             From delivery to marketing, we provide comprehensive solutions for businesses and customers across Sierra Leone
           </p>
         </div>
@@ -71,21 +71,21 @@ const ServiceCategories = () => {
             return (
               <div
                 key={index}
-                className={`${service.bgColor} rounded-2xl p-8 card-hover cursor-pointer group`}
+                className={`bg-white rounded-3xl p-8 card-hover cursor-pointer group shadow-premium hover:shadow-premium-lg border border-gray-100`}
               >
-                <div className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <IconComponent className="w-8 h-8 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-heading font-semibold text-charcoal mb-3">
+                <h3 className="text-xl font-heading font-bold text-rich-charcoal mb-3">
                   {service.title}
                 </h3>
                 
-                <p className="text-medium-gray leading-relaxed">
+                <p className="text-medium-gray leading-relaxed font-medium">
                   {service.description}
                 </p>
 
-                <div className="mt-6 flex items-center text-sm font-medium group-hover:text-green-800 transition-colors">
+                <div className="mt-6 flex items-center text-sm font-bold group-hover:text-orange-600 transition-colors">
                   <span className={service.iconColor}>Learn More</span>
                   <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -97,7 +97,7 @@ const ServiceCategories = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="btn-primary">
+          <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
             Explore All Services
           </button>
         </div>

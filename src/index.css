@@ -4,15 +4,19 @@
 
 :root {
   --primary-orange: #FF8C42;
-  --secondary-green: #059669;
+  --secondary-white: #FFFFFF;
+  --accent-green: #059669;
   --accent-gold: #FFB300;
   --success-green: #28A745;
   --warning-amber: #FFC107;
   --error-red: #DC3545;
   --info-blue: #17A2B8;
-  --dark-charcoal: #2D3748;
+  --dark-charcoal: #1A202C;
+  --rich-charcoal: #2D3748;
   --medium-gray: #6C757D;
-  --light-gray: #F8F9FA;
+  --light-gray: #F7FAFC;
+  --pure-white: #FFFFFF;
+  --warm-white: #FEFEFE;
 }
 
 * {
@@ -37,33 +41,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-primary {
-  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-green) 100%);
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-white) 100%);
 }
 
 .gradient-hero {
-  background: linear-gradient(135deg, rgba(255, 140, 66, 0.15) 0%, rgba(5, 150, 105, 0.15) 100%);
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.08) 0%, rgba(255, 255, 255, 0.95) 100%);
 }
 
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 140, 66, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
-  @apply bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  @apply bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
 }
 
 .btn-secondary {
-  @apply bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  @apply bg-white border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
 }
 
 .btn-outline {
-  @apply border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300;
+  @apply border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:shadow-lg;
 }
 
 .card-hover {
-  @apply transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+  @apply transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:-translate-y-1;
 }
 
 .section-padding {
@@ -75,10 +80,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-green) 100%);
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-gold) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.text-gradient-white {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Premium shadows */
+.shadow-premium {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-premium-lg {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 /* Animation classes */
@@ -141,18 +162,18 @@ html {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--light-gray);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--primary-orange);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-green);
+  background: var(--accent-green);
 }

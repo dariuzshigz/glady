@@ -62,7 +62,7 @@ const ConfirmResetPassword = () => {
         <div className="max-w-md w-full space-y-8">
           <div className="text-center">
             <Link to="/" className="inline-flex items-center space-x-2 mb-8">
-              <div className="w-12 h-12 bg-gradient-to-r from-green-800 to-orange-500 rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">G</span>
               </div>
               <span className="text-3xl font-heading font-bold text-gradient">Gladdy</span>
@@ -111,7 +111,7 @@ const ConfirmResetPassword = () => {
         <div className="max-w-md w-full space-y-8">
           <div className="text-center">
             <Link to="/" className="inline-flex items-center space-x-2 mb-8">
-              <div className="w-12 h-12 bg-gradient-to-r from-green-800 to-orange-500 rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">G</span>
               </div>
               <span className="text-3xl font-heading font-bold text-gradient">Gladdy</span>
@@ -150,7 +150,7 @@ const ConfirmResetPassword = () => {
         {/* Header */}
         <div className="text-center">
           <Link to="/" className="inline-flex items-center space-x-2 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-green-800 to-orange-500 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">G</span>
             </div>
             <span className="text-3xl font-heading font-bold text-gradient">Gladdy</span>
@@ -183,7 +183,7 @@ const ConfirmResetPassword = () => {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent placeholder-medium-gray"
+                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-medium-gray"
                   placeholder="Enter new password"
                 />
                 <button
@@ -216,7 +216,7 @@ const ConfirmResetPassword = () => {
                   required
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent placeholder-medium-gray"
+                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-medium-gray"
                   placeholder="Confirm new password"
                 />
                 <button
@@ -280,7 +280,7 @@ const ConfirmResetPassword = () => {
           <div className="mt-6 text-center">
             <Link
               to="/auth/login"
-              className="text-sm text-green-800 hover:text-green-900 font-medium"
+              className="text-sm text-orange-600 hover:text-orange-700 font-medium"
             >
               Back to Sign In
             </Link>

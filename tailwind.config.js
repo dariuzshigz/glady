@@ -38,9 +38,10 @@ export default {
         warning: '#FFC107',
         error: '#DC3545',
         info: '#17A2B8',
-        charcoal: '#2D3748',
+        charcoal: '#1A202C',
+        'rich-charcoal': '#2D3748',
         'medium-gray': '#6C757D',
-        'light-gray': '#F8F9FA',
+        'light-gray': '#F7FAFC',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

@@ -84,7 +84,7 @@ const VendorLayout: React.FC<VendorLayoutProps> = ({ children }) => {
         {/* Sidebar Header */}
         <div className="flex items-center justify-between h-16 px-6 border-b border-gray-200">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-green-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-amber-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">G</span>
             </div>
             <span className="text-xl font-heading font-bold text-gradient">
@@ -109,14 +109,14 @@ const VendorLayout: React.FC<VendorLayoutProps> = ({ children }) => {
                 to={item.href}
                 className={`flex items-center px-3 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 ${
                   isActive(item.href)
-                    ? "bg-orange-50 text-orange-700 border-r-2 border-orange-700"
+                    ? "bg-orange-50 text-orange-600 border-r-2 border-orange-600"
                     : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                 }`}
                 onClick={() => setIsSidebarOpen(false)}
               >
                 <IconComponent
                   className={`w-5 h-5 mr-3 ${
-                    isActive(item.href) ? "text-orange-700" : "text-gray-400"
+                    isActive(item.href) ? "text-orange-600" : "text-gray-400"
                   }`}
                 />
                 {item.name}

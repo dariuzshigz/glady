@@ -53,7 +53,7 @@ function Password({ formData, setFormData, handleRegister, isLoading }: Password
               required
               value={formData.password}
               onChange={handleChange}
-              className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent placeholder-medium-gray"
+              className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-medium-gray"
               placeholder="Password"
             />
             <button
@@ -83,7 +83,7 @@ function Password({ formData, setFormData, handleRegister, isLoading }: Password
               required
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="block w-full pl-3 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent placeholder-medium-gray"
+              className="block w-full pl-3 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-medium-gray"
               placeholder="Confirm password"
             />
             <button

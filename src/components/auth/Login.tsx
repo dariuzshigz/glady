@@ -118,7 +118,7 @@ const LoginPage = () => {
         {/* Header */}
         <div className="text-center">
           <Link to="/" className="inline-flex items-center space-x-2 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-green-600 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">G</span>
             </div>
             <span className="text-3xl font-heading font-bold text-gradient">
@@ -175,7 +175,7 @@ const LoginPage = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent placeholder-medium-gray"
-                  placeholder="Enter your email"
+                  className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-medium-gray"
                 />
               </div>
             </div>
@@ -199,7 +199,7 @@ const LoginPage = () => {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 focus:border-transparent placeholder-medium-gray"
+                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-medium-gray"
                   placeholder="Enter your password"
                 />
                 <button
@@ -237,7 +237,7 @@ const LoginPage = () => {
               <Link
                 to="/signup"
                 state={[{ sendemailreset: true }]}
-                className="text-sm text-orange-500 hover:text-orange-600 font-medium"
+                className="text-sm text-amber-600 hover:text-amber-700 font-medium"
               >
                 Forgot password?
               </Link>
